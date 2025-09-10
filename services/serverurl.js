@@ -1,1 +1,1 @@
-export const serverurl = 'https://crud-backend-p2by.onrender.com/employees'
+export const serverurl = 'https://crud-backend-p2by.onrender.com'

@@ -222,7 +222,7 @@ if(result.status==200){
           fromserv.length > 0 && fromserv.map((item) => (
 
 
-            <Card href="#" className=" w-92 h-72  !bg-gray-700">
+            <Card href="#" className=" w-92 h-72  !bg-gray-700 rounded">
               <div className='flex flex-col justify-center gap-3 '>
 
                 <div className='flex gap-4 items-center px-10'>
@@ -273,15 +273,15 @@ if(result.status==200){
       </div>
       {/* //modal// */}
 
-      <Modal show={openModal} onClose={() => setOpenModal(false)} size="xl" theme={{
+      <Modal show={openModal} onClose={() => setOpenModal(false)} size="xl" className="" theme={{
         content:{
-          base:'w-96  rounded !bg-gray-800 h-96 rounded '
+          base:'w-96   !bg-gray-800 h-96 rounded '
         }
       }}>
         
-        <ModalBody className="">
+        <ModalBody className=" !bg-gray-800">
 
-          <div className='flex flex-col gap-5  items-center justify-center p-10 rounded  bg-gray-700  h-full w-full'>
+          <div className='flex flex-col gap-5  items-center justify-center p-10  bg-gray-700  h-full w-full'>
 
             <h1 className="text-white font-semibold">Edit Details</h1>
                 <input type="text" className='w-full p-2  outline-none text-black bg-white rounded text-xs ' onChange={(e) => setspecificdata({ ...specificdata, Name: e.target.value })} value={specificdata?.Name} />
